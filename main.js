@@ -439,6 +439,105 @@ if (packageCards.length) {
   });
 }
 
+// Packages page animations
+const packagesHeader = document.getElementById('packagesHeader');
+if (packagesHeader) {
+  gsap.set(packagesHeader, { opacity: 0, y: 40 });
+  ScrollTrigger.create({
+    trigger: packagesHeader, start: 'top 88%', once: true,
+    onEnter: () => gsap.to(packagesHeader, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
+  });
+}
+
+const packagesBHeader = document.getElementById('packagesBHeader');
+if (packagesBHeader) {
+  gsap.set(packagesBHeader, { opacity: 0, y: 40 });
+  ScrollTrigger.create({
+    trigger: packagesBHeader, start: 'top 88%', once: true,
+    onEnter: () => gsap.to(packagesBHeader, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
+  });
+}
+
+const packagesGridA = document.getElementById('packagesGridA');
+if (packagesGridA) {
+  const cardsA = packagesGridA.querySelectorAll('.package-card');
+  gsap.set(cardsA, { opacity: 0, y: 50 });
+  ScrollTrigger.create({
+    trigger: packagesGridA, start: 'top 82%', once: true,
+    onEnter: () => gsap.to(cardsA, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', stagger: 0.14 })
+  });
+}
+
+const packagesGridB = document.getElementById('packagesGridB');
+if (packagesGridB) {
+  const cardsB = packagesGridB.querySelectorAll('.package-card');
+  gsap.set(cardsB, { opacity: 0, y: 50 });
+  ScrollTrigger.create({
+    trigger: packagesGridB, start: 'top 82%', once: true,
+    onEnter: () => gsap.to(cardsB, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', stagger: 0.14 })
+  });
+}
+
+const bothHallsNote = document.getElementById('bothHallsNote');
+if (bothHallsNote) {
+  gsap.set(bothHallsNote, { opacity: 0, y: 40 });
+  ScrollTrigger.create({
+    trigger: bothHallsNote, start: 'top 85%', once: true,
+    onEnter: () => gsap.to(bothHallsNote, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
+  });
+}
+
+const includedHeader = document.getElementById('includedHeader');
+if (includedHeader) {
+  gsap.set(includedHeader, { opacity: 0, y: 40 });
+  ScrollTrigger.create({
+    trigger: includedHeader, start: 'top 88%', once: true,
+    onEnter: () => gsap.to(includedHeader, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
+  });
+}
+
+const includedGrid = document.getElementById('includedGrid');
+if (includedGrid) {
+  const includedItems = includedGrid.querySelectorAll('div');
+  gsap.set(includedItems, { opacity: 0, y: 40 });
+  ScrollTrigger.create({
+    trigger: includedGrid, start: 'top 82%', once: true,
+    onEnter: () => gsap.to(includedItems, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', stagger: 0.1 })
+  });
+}
+
+// Contact page animations
+const contactInfo = document.getElementById('contactInfo');
+if (contactInfo) {
+  gsap.set(contactInfo, { opacity: 0, x: -60 });
+  ScrollTrigger.create({
+    trigger: contactInfo, start: 'top 85%', once: true,
+    onEnter: () => gsap.to(contactInfo, { opacity: 1, x: 0, duration: 1.1, ease: 'power3.out' })
+  });
+}
+
+const contactFormWrap = document.getElementById('contactForm');
+if (contactFormWrap) {
+  gsap.set(contactFormWrap, { opacity: 0, x: 60 });
+  ScrollTrigger.create({
+    trigger: contactFormWrap, start: 'top 85%', once: true,
+    onEnter: () => gsap.to(contactFormWrap, { opacity: 1, x: 0, duration: 1.1, ease: 'power3.out' })
+  });
+}
+
+const quickFacts = document.getElementById('quickFacts');
+if (quickFacts) {
+  const facts = quickFacts.querySelectorAll('div');
+  gsap.set(facts, { opacity: 0, y: 36 });
+  ScrollTrigger.create({
+    trigger: quickFacts, start: 'top 85%', once: true,
+    onEnter: () => gsap.to(facts, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', stagger: 0.1 })
+  });
+}
+
+
+
+
 // ================================
 //   GALLERY PAGE
 // ================================
@@ -575,7 +674,7 @@ if (galleryGrid) {
 // ================================
 //   CONTACT FORM
 // ================================
-const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById("contactFormE1");
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();

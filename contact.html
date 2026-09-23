@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Classique Event Place — book a hall for your wedding, corporate event, birthday or conference in Oregun, Ikeja, Lagos." />
+  <title>Contact | Classique Event Place</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥂</text></svg>" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Classique Event Place</span>
+        <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="nav-phone">0818 319 6423</span>
+        <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">Book a Hall</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="gallery.html" onclick="closeMobileNav()">Gallery</a>
+    <a href="packages.html" onclick="closeMobileNav()">Packages</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold" style="margin-top:16px;">Book a Hall</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Book Your <em style="color:var(--gold);font-style:italic;">Hall</em></h1>
+      <div class="gold-line center"></div>
+      <p>Located at 7A Kudirat Abiola Way, Oregun, Ikeja, Lagos. WhatsApp us for the fastest response — we typically reply within the hour.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT -->
+        <div id="contactInfo">
+          <span class="section-label">Find Us</span>
+          <h2>Venue Information</h2>
+          <div class="gold-line"></div>
+
+          <div class="contact-info-list">
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">Address</div>
+                <div class="contact-info-value">7A Kudirat Abiola Way</div>
+                <div class="contact-info-sub">Oregun, Ikeja, Lagos 101233</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <a href="tel:+2348183196423" class="contact-info-value" style="display:block;">0818 319 6423</a>
+                <div class="contact-info-sub">Call us directly</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💬</div>
+              <div>
+                <div class="contact-info-label">WhatsApp</div>
+                <a href="https://wa.me/2348183196423" target="_blank" class="contact-info-value" style="display:block;">Chat with us on WhatsApp</a>
+                <div class="contact-info-sub">Fastest way to check availability</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label">Office Hours</div>
+                <div class="contact-info-value">Monday – Friday</div>
+                <div class="contact-info-sub">9:00 AM – 5:00 PM</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🏛️</div>
+              <div>
+                <div class="contact-info-label">Accessibility</div>
+                <div class="contact-info-value">Wheelchair Accessible</div>
+                <div class="contact-info-sub">Accessible entrance, car park and restrooms</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4!2d3.3583!3d6.6018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sClassique+Event+Place!5e0!3m2!1sen!2sng!4v1234567890"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Classique Event Place location map">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="contact-form-wrap" id="contactForm">
+          <h3>Send a Booking Enquiry</h3>
+          <p>Fill in your details and we'll send your enquiry to our WhatsApp — we'll confirm availability from there.</p>
+
+          <form id="contactFormEl">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Funmi Adeyemi" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input type="tel" id="phone" class="form-input" placeholder="e.g. 0801 234 5678" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="eventType">Event Type</label>
+              <select id="eventType" class="form-select">
+                <option value="Wedding">Wedding</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Birthday Celebration">Birthday Celebration</option>
+                <option value="Conference">Conference</option>
+                <option value="Engagement Ceremony">Engagement Ceremony</option>
+                <option value="Gala Night">Gala Night</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="eventDate">Event Date</label>
+                <input type="date" id="eventDate" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="guests">Expected Guests</label>
+                <select id="guests" class="form-select">
+                  <option value="Under 50">Under 50</option>
+                  <option value="50 – 100">50 – 100</option>
+                  <option value="100 – 200">100 – 200</option>
+                  <option value="200 – 300">200 – 300</option>
+                  <option value="300 – 400">300 – 400</option>
+                  <option value="400+">400+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="hall">Preferred Hall</label>
+              <select id="hall" class="form-select">
+                <option value="Hall A — Grand Hall (up to 400 guests)">Hall A — Grand Hall (up to 400 guests)</option>
+                <option value="Hall B — Intimate Hall (up to 150 guests)">Hall B — Intimate Hall (up to 150 guests)</option>
+                <option value="Both Halls">Both Halls</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Additional Details</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us more — theme, special requirements, anything else we should know..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:8px;">
+              💬 Send Enquiry via WhatsApp
+            </button>
+
+            <p style="font-size:0.74rem;color:var(--text-muted);text-align:center;margin-top:14px;max-width:none;">
+              Clicking the button opens WhatsApp with your details pre-filled. We'll confirm availability and pricing from there.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS STRIP -->
+  <section class="section-sm" style="background:var(--black-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center;" id="quickFacts">
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:10px;">📍</div>
+          <h4 style="color:var(--cream);margin-bottom:6px;font-size:0.95rem;">Central Location</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);max-width:none;">Kudirat Abiola Way, Oregun — easily accessible from all parts of Lagos.</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:10px;">🏛️</div>
+          <h4 style="color:var(--cream);margin-bottom:6px;font-size:0.95rem;">Two Halls</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);max-width:none;">Hall A seats 400+. Hall B seats 150. Both available simultaneously.</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:10px;">💳</div>
+          <h4 style="color:var(--cream);margin-bottom:6px;font-size:0.95rem;">Card Payments</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);max-width:none;">We accept credit cards, debit cards and NFC mobile payments.</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:10px;">⭐</div>
+          <h4 style="color:var(--cream);margin-bottom:6px;font-size:0.95rem;">584 Reviews</h4>
+          <p style="font-size:0.8rem;color:var(--text-muted);max-width:none;">4.5 stars on Google — Lagos's most reviewed event venue in Ikeja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div id="ctaContent">
+        <span class="section-label">Don't Wait</span>
+        <h2>Weekend Dates Go Fast</h2>
+        <p>Secure your date today — WhatsApp us now and we'll confirm availability within the hour.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">
+            💬 WhatsApp Us Now
+          </a>
+          <a href="tel:+2348183196423" class="btn btn-outline">
+            📞 Call 0818 319 6423
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-name">Classique Event Place</span>
+            <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+          </div>
+          <p>Lagos's premier event venue since 2015. Two elegant halls for weddings, corporate events, birthdays and more.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:+2348183196423">0818 319 6423</a></li>
+            <li><a href="https://wa.me/2348183196423" target="_blank">WhatsApp</a></li>
+            <li><a href="contact.html">7A Kudirat Abiola Way<br>Oregun, Ikeja, Lagos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Classique Event Place. All rights reserved.</p>
+        <div class="footer-credit-block">
+          <p class="footer-credit">Built by <a href="https://wa.me/2347089428435" target="_blank">Maxwell — VagabondCode</a></p>
+          <div class="footer-credit-contacts">
+            <a href="https://wa.me/2347089428435" target="_blank" class="footer-contact-link">💬 WhatsApp</a>
+            <a href="mailto:vagabondcode02@gmail.com" class="footer-contact-link">Email</a>
+            <a href="https://instagram.com/vagabond.code" target="_blank" class="footer-contact-link">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348183196423" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

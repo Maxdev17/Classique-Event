@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Classique Event Place packages — hall hire options for weddings, corporate events, birthdays and conferences in Oregun, Ikeja, Lagos." />
+  <title>Packages | Classique Event Place</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥂</text></svg>" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Classique Event Place</span>
+        <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="nav-phone">0818 319 6423</span>
+        <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">Book a Hall</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="gallery.html" onclick="closeMobileNav()">Gallery</a>
+    <a href="packages.html" onclick="closeMobileNav()">Packages</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold" style="margin-top:16px;">Book a Hall</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="container">
+      <span class="section-label">Pricing & Packages</span>
+      <h1>Simple, Transparent<br /><em style="color:var(--gold);font-style:italic;">Pricing.</em></h1>
+      <div class="gold-line center"></div>
+      <p>Choose the package that fits your event. All packages include air conditioning, parking, security, and clean restrooms. Contact us for custom pricing on longer bookings.</p>
+    </div>
+  </section>
+
+  <!-- PACKAGES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center" id="packagesHeader">
+        <span class="section-label">Hall A — The Grand Hall</span>
+        <h2>Up to 400 Guests</h2>
+        <div class="gold-line center"></div>
+        <p style="text-align:center;margin:0 auto;">Our largest hall — ideal for weddings, large birthdays, corporate galas and conferences.</p>
+      </div>
+
+      <div class="packages-grid" id="packagesGridA">
+
+        <div class="package-card">
+          <div class="package-name">Daytime Hire</div>
+          <h3>Morning Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">8:00 AM – 2:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall A — Grand Hall</div>
+            <div class="package-feature">Up to 400 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Morning%20Session%20package%20for%20Hall%20A." target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+        <div class="package-card featured">
+          <div class="package-name">Full Day Hire</div>
+          <h3>Full Day Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">8:00 AM – 10:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall A — Grand Hall</div>
+            <div class="package-feature">Up to 400 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+            <div class="package-feature">Extended time — full day</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Full%20Day%20package%20for%20Hall%20A." target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+        <div class="package-card">
+          <div class="package-name">Evening Hire</div>
+          <h3>Evening Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">4:00 PM – 10:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall A — Grand Hall</div>
+            <div class="package-feature">Up to 400 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Evening%20Session%20package%20for%20Hall%20A." target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HALL B -->
+  <section class="section" style="background:var(--black-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="text-center" id="packagesBHeader">
+        <span class="section-label">Hall B — The Intimate Hall</span>
+        <h2>Up to 150 Guests</h2>
+        <div class="gold-line center"></div>
+        <p style="text-align:center;margin:0 auto;">Our more intimate space — perfect for private dinners, small weddings, conferences and corporate meetings.</p>
+      </div>
+
+      <div class="packages-grid" id="packagesGridB">
+
+        <div class="package-card">
+          <div class="package-name">Daytime Hire</div>
+          <h3>Morning Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">8:00 AM – 2:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall B — Intimate Hall</div>
+            <div class="package-feature">Up to 150 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Morning%20Session%20package%20for%20Hall%20B." target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+        <div class="package-card featured">
+          <div class="package-name">Full Day Hire</div>
+          <h3>Full Day Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">8:00 AM – 10:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall B — Intimate Hall</div>
+            <div class="package-feature">Up to 150 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+            <div class="package-feature">Extended time — full day</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Full%20Day%20package%20for%20Hall%20B." target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+        <div class="package-card">
+          <div class="package-name">Evening Hire</div>
+          <h3>Evening Session</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);max-width:none;margin-bottom:0;">4:00 PM – 10:00 PM</p>
+          <div class="package-price">Contact Us<span> for pricing</span></div>
+          <div class="package-features">
+            <div class="package-feature">Hall B — Intimate Hall</div>
+            <div class="package-feature">Up to 150 guests</div>
+            <div class="package-feature">Full air conditioning</div>
+            <div class="package-feature">Security personnel</div>
+            <div class="package-feature">Parking attendants</div>
+            <div class="package-feature">Clean restrooms</div>
+          </div>
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20the%20Evening%20Session%20package%20for%20Hall%20B." target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">
+            Enquire Now
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTH HALLS NOTE -->
+  <section class="section-sm">
+    <div class="container">
+      <div style="background:var(--black-card);border:1px solid var(--gold-border);border-radius:var(--radius-md);padding:48px 44px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;" id="bothHallsNote">
+        <div>
+          <span class="section-label">Special Option</span>
+          <h2 style="font-size:1.8rem;">Book Both Halls</h2>
+          <div class="gold-line"></div>
+          <p>Planning a very large event? Both halls can be booked simultaneously — ideal for events with 500+ guests, multi-session conferences, or overflow arrangements. Contact us for combined pricing.</p>
+        </div>
+        <div style="text-align:right;">
+          <a href="https://wa.me/2348183196423?text=Hello%20Classique%20Event%20Place%2C%20I%20would%20like%20to%20enquire%20about%20booking%20both%20halls." target="_blank" class="btn btn-gold" style="margin-bottom:16px;">
+            💬 Enquire for Both Halls
+          </a>
+          <p style="font-size:0.8rem;color:var(--text-muted);max-width:none;margin-top:12px;">We'll get back to you with availability and combined pricing within the hour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="section" style="background:var(--black-mid);border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="text-center" id="includedHeader">
+        <span class="section-label">Every Package Includes</span>
+        <h2>What You Always Get</h2>
+        <div class="gold-line center"></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px;" id="includedGrid">
+        <div style="text-align:center;padding:32px 20px;background:var(--black-card);border:1px solid var(--border);border-radius:var(--radius-md);">
+          <div style="font-size:2rem;margin-bottom:14px;">❄️</div>
+          <h4 style="color:var(--cream);margin-bottom:8px;">Air Conditioning</h4>
+          <p style="font-size:0.82rem;color:var(--text-muted);max-width:none;">Powerful AC maintains comfort at full capacity throughout your event.</p>
+        </div>
+        <div style="text-align:center;padding:32px 20px;background:var(--black-card);border:1px solid var(--border);border-radius:var(--radius-md);">
+          <div style="font-size:2rem;margin-bottom:14px;">🚗</div>
+          <h4 style="color:var(--cream);margin-bottom:8px;">Parking</h4>
+          <p style="font-size:0.82rem;color:var(--text-muted);max-width:none;">On-site lot plus street parking, managed by professional attendants.</p>
+        </div>
+        <div style="text-align:center;padding:32px 20px;background:var(--black-card);border:1px solid var(--border);border-radius:var(--radius-md);">
+          <div style="font-size:2rem;margin-bottom:14px;">🔒</div>
+          <h4 style="color:var(--cream);margin-bottom:8px;">Security</h4>
+          <p style="font-size:0.82rem;color:var(--text-muted);max-width:none;">Professional security personnel on-site for the full duration of your event.</p>
+        </div>
+        <div style="text-align:center;padding:32px 20px;background:var(--black-card);border:1px solid var(--border);border-radius:var(--radius-md);">
+          <div style="font-size:2rem;margin-bottom:14px;">🚻</div>
+          <h4 style="color:var(--cream);margin-bottom:8px;">Clean Restrooms</h4>
+          <p style="font-size:0.82rem;color:var(--text-muted);max-width:none;">Well-maintained, clean restrooms consistently praised in our Google reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div id="ctaContent">
+        <span class="section-label">Ready to Book?</span>
+        <h2>Secure Your Date Today</h2>
+        <p>Dates go fast — especially weekends. WhatsApp us now to check availability.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">
+            💬 WhatsApp Us Now
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            Send an Enquiry
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-name">Classique Event Place</span>
+            <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+          </div>
+          <p>Lagos's premier event venue since 2015. Two elegant halls for weddings, corporate events, birthdays and more.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:+2348183196423">0818 319 6423</a></li>
+            <li><a href="https://wa.me/2348183196423" target="_blank">WhatsApp</a></li>
+            <li><a href="contact.html">7A Kudirat Abiola Way<br>Oregun, Ikeja, Lagos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Classique Event Place. All rights reserved.</p>
+        <div class="footer-credit-block">
+          <p class="footer-credit">Built by <a href="https://wa.me/2347089428435" target="_blank">Maxwell — VagabondCode</a></p>
+          <div class="footer-credit-contacts">
+            <a href="https://wa.me/2347089428435" target="_blank" class="footer-contact-link">💬 WhatsApp</a>
+            <a href="mailto:vagabondcode02@gmail.com" class="footer-contact-link">Email</a>
+            <a href="https://instagram.com/vagabond.code" target="_blank" class="footer-contact-link">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348183196423" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

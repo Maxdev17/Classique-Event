@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Classique Event Place gallery — weddings, corporate events, birthdays and conferences in Oregun, Ikeja, Lagos." />
+  <title>Gallery | Classique Event Place</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥂</text></svg>" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Classique Event Place</span>
+        <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="nav-phone">0818 319 6423</span>
+        <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">Book a Hall</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="gallery.html" onclick="closeMobileNav()">Gallery</a>
+    <a href="packages.html" onclick="closeMobileNav()">Packages</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold" style="margin-top:16px;">Book a Hall</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="container">
+      <span class="section-label">The Venue</span>
+      <h1>See the Space<br /><em style="color:var(--gold);font-style:italic;">Come Alive</em></h1>
+      <div class="gold-line center"></div>
+      <p>Browse our halls dressed for weddings, corporate events, birthdays, conferences and more.</p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All Events</button>
+      <button class="filter-btn" data-filter="wedding">Weddings</button>
+      <button class="filter-btn" data-filter="corporate">Corporate</button>
+      <button class="filter-btn" data-filter="birthday">Birthdays</button>
+      <button class="filter-btn" data-filter="setup">Hall Setup</button>
+    </div>
+  </div>
+
+  <!-- MASONRY GALLERY -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80" alt="Wedding reception hall" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Weddings</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1478147427282-58a87a433b40?w=800&q=80" alt="Corporate event" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Corporate</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="setup">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80" alt="Hall setup" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Hall Setup</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="birthday">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80" alt="Birthday celebration" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Birthdays</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=80" alt="Wedding ceremony" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Weddings</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" alt="Conference setup" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Corporate</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="setup">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80" alt="Elegant table setting" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Hall Setup</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="birthday">
+          <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=80" alt="Birthday party" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Birthdays</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80" alt="Wedding decoration" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Weddings</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="setup">
+          <img src="https://images.unsplash.com/photo-1478146059778-26b49130eeea?w=800&q=80" alt="Banquet setup" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Hall Setup</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="Corporate gathering" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Corporate</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="birthday">
+          <img src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?w=800&q=80" alt="Celebration night" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Birthdays</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80" alt="Wedding reception" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Weddings</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="setup">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="Venue lighting" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Hall Setup</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=800&q=80" alt="Corporate conference" loading="lazy" />
+          <div class="gallery-item-overlay"><span class="gallery-item-label">Corporate</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 15</div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div id="ctaContent">
+        <span class="section-label">Like What You See?</span>
+        <h2>Book Your Event at<br />Classique Today</h2>
+        <p>Check availability and secure your date in minutes — just WhatsApp us.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/2348183196423" target="_blank" class="btn btn-gold">
+            💬 WhatsApp Us Now
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            Send an Enquiry
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-name">Classique Event Place</span>
+            <span class="nav-logo-tag">Oregun · Ikeja · Lagos</span>
+          </div>
+          <p>Lagos's premier event venue since 2015. Two elegant halls for weddings, corporate events, birthdays and more.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:+2348183196423">0818 319 6423</a></li>
+            <li><a href="https://wa.me/2348183196423" target="_blank">WhatsApp</a></li>
+            <li><a href="contact.html">7A Kudirat Abiola Way<br>Oregun, Ikeja, Lagos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Classique Event Place. All rights reserved.</p>
+        <div class="footer-credit-block">
+          <p class="footer-credit">Built by <a href="https://wa.me/2347089428435" target="_blank">Maxwell — VagabondCode</a></p>
+          <div class="footer-credit-contacts">
+            <a href="https://wa.me/2347089428435" target="_blank" class="footer-contact-link">💬 WhatsApp</a>
+            <a href="mailto:vagabondcode02@gmail.com" class="footer-contact-link">Email</a>
+            <a href="https://instagram.com/vagabond.code" target="_blank" class="footer-contact-link">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348183196423" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
